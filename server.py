@@ -47,5 +47,5 @@ class Server(object):
 
 
 if __name__ == "__main__":
-    server = Server("output.log", "stats.mailu.io")
+    server = Server(*sys.argv[1:])
     server.serve()
