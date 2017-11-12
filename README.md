@@ -41,7 +41,7 @@ docker run -p 53:53/udp -it -e DOMAIN=stats.mydomain.com --rm --name mailu-stats
 
 #### Manual
 
-If you want to build the service manually you should set some environment-variables, here it a list of all, their defaults and what they're for:
+If you want to build the service manually you should set some environment-variables, here is a list of all, their defaults and what they're for:
 
 |variable|default value|purpose|
 |---|---|---|
