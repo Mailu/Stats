@@ -1,0 +1,19 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "XXk8LwyJ+B2MNVn6fkwjDjBBsrA=",
+			"path": "github.com/miekg/dns",
+			"revision": "9fc4eb252eedf0ef8adc05169ce35da5e31beaba",
+			"revisionTime": "2017-11-10T10:33:17Z"
+		},
+		{
+			"checksumSHA1": "AYjG78HsyaohvBTuzCgdxU48dFE=",
+			"path": "github.com/miekg/dns/internal/socket",
+			"revision": "9fc4eb252eedf0ef8adc05169ce35da5e31beaba",
+			"revisionTime": "2017-11-10T10:33:17Z"
+		}
+	],
+	"rootPath": "github.com/Mailu/Stats"
+}
