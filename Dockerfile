@@ -1,12 +1,19 @@
-FROM golang:alpine
+FROM golang:alpine AS builder
+
+ENV CGO_ENABLED=0
 
 WORKDIR /go/src/app
 COPY . .
 
-RUN go-wrapper download
-RUN go-wrapper install
+RUN go build -v ./...
+RUN go install -v ./...
 
-CMD ["go-wrapper", "run"]
+
+FROM scratch
+
+COPY --from=builder /go/bin/app /app
+
+CMD ["/app"]
 
 # ENV LOGPATH=/output.log # where to store the log
 # ENV HOST=0.0.0.0 # which IP or Hostname to listen on (supports IPv4 and IPv6)
